@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Your Account Information </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+            <section class="bg-rose-50 text-center py-20 px-10">
+                <div class="grid grid-cols-3 gap-20 my-16">
+                    <div class="bg-indigo-500 py-5 text-2xl">
+                        <h1 class="font-bold text-white">Total Depoiste</h1>
+                        <p >Tk. <span id="total-deposite">00</span> </p>
+                    </div>
+    
+                    <div class="bg-green-600 ">
+                        <div class="bg-rose-500 py-5 text-2xl">
+                            <h1 class="font-bold text-white"> Total Withdraw</h1>
+                            <p>Tk. 0000 </p>
+                        </div>
+                    </div>
+    
+                    <div class="bg-orange-600">
+                        <div class="bg-emerald-500 py-5 text-2xl">
+                            <h1 class="font-bold text-white"> Balance</h1>
+                            <p>Tk. 0000 </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-10">
+                    <div >
+                        <div class="bg-purple-500 py-5 text-xl space-y-3">
+                            <h1 class="font-bold text-white">Depoiste</h1>
+                            <input id="deposite-field" class="w-9/12 py-1 pl-5 block mx-auto" type="text" placeholder="depositeamount">
+                            <button id="deposite-btn" class="bg-rose-500 px-5 py-2 rounded-md text-white">Depoiste</button>
+                        </div>
+                    </div>
+
+                    <div class="">
+                        <div class="bg-purple-500 py-5 text-xl space-y-3">
+                            <h1 class="font-bold text-white">Withdraw</h1>
+                            <input class="w-9/12 py-1 pl-5 block mx-auto" type="number" placeholder="withdrawamount">
+                            <button class="bg-rose-500 px-5 py-2 rounded-md text-white">Withdraw</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+<script src="deposite.js"></script>
+</body>
+</html>
