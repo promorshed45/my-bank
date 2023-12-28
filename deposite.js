@@ -16,11 +16,15 @@ document.getElementById('deposite-btn').addEventListener('click', function(){
     previousDepoiste.innerText = currentTotalDeposite;
 
 
-    const totalBalance = document.getElementById('total-balance');
-    const newtoTalBalance = totalBalance.innerText;
-    totalBalance.innerText = currentTotalDeposite;
 
-    
+    const previousBalance = document.getElementById('total-balance');
+   const previousBalanceString = previousBalance.innerText;
+   const totalPreviousBalance = parseFloat(previousBalanceString);
+
+   const currentTotalBalance = totalPreviousBalance + newdepositeAmount;
+   previousBalance.innerText = currentTotalBalance;
+   
+    depositeField.value = '';
 
     
 })
